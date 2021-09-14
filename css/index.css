@@ -1,0 +1,317 @@
+* {
+  margin:0px;
+  padding:0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: #333;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin: 5rem;
+  padding: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: rgb(241, 75, 75);
+  color: white;
+  border: 0;
+}
+
+.button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.toptitle {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.img-center {
+  display: flex;
+  justify-content: center;
+}
+
+ul, ol {
+  list-style:none;
+}
+
+.subtitles {
+  margin-left: 10%;
+}
+
+.nav {
+  margin-right: 2%;
+}
+
+.nav > li {
+  float:left;
+}
+
+.nav li a {
+  background-color:black;
+  color:white;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.nav li a:hover {
+  background-color:#434343;
+}
+
+.container{
+margin: auto;
+background-color: white;
+width: 800px;
+padding: 30px;
+}
+
+ul, li {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+ul.slider{
+position: relative;
+width: 800px;
+height: 300px;
+}
+
+ul.slider li {
+position: absolute;
+left: 0px;
+top: 0px;
+opacity: 0;
+width: inherit;
+height: inherit;
+transition: opacity .5s;
+background:#fff;
+}
+
+ul.slider li img{
+width: 100%;
+height: 300px;
+object-fit: cover;
+}
+
+ul.slider li:first-child {
+opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+text-align: center;
+margin: 20px;
+}
+
+.menu li{
+display: inline-block;
+text-align: center;
+}
+
+.menu li a{
+display: inline-block;
+color: white;
+text-decoration: none;
+background-color: grey;
+padding: 10px;
+width: 20px;
+height: 20px;
+font-size: 20px;
+border-radius: 100%;
+}
+
+
+h1 {
+background: #333;
+color: #fff;
+text-align: center;
+margin: 0 0 5% 0;
+padding: 0.5em;
+margin: 0 0 5% 0;
+}
+
+.cardBox {
+float: left ;
+font-size: 1.2em;
+margin: 1% 0 0 1%;
+perspective: 800px;
+transition: all 0.3s ease 0s;
+width: 23.7%;
+}
+
+.cardBox:hover .card {
+transform: rotateY( 180deg);
+}
+
+.card {
+background: white;
+cursor: default;
+height: 200px;
+transform-style: preserve-3d;
+transition: transform 0.4s ease 0s;
+width: 100%;
+-webkit-animation: giro 1s 1;
+animation: giro 1s 1;
+}
+
+.card p {
+margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+backface-visibility: hidden;
+box-sizing: border-box;
+color: black;
+display: block;
+font-size: 1.2em;
+height: 100%;
+padding: 0.8em;
+position: absolute;
+text-align: center;
+width: 100%;
+}
+
+.card .front strong {
+background: #fff;
+border-radius: 100%;
+color: #222;
+font-size: 1.5em;
+line-height: 30px;
+padding: 0 7px 4px 6px;
+}
+
+.card .back {
+transform: rotateY( 180deg);
+}
+
+.card .back a {
+padding: 0.3em 0.5em;
+background: #333;
+color: #fff;
+text-decoration: none;
+border-radius: 1px;
+font-size: 0.9em;
+transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+background: #fff;
+color: #333;
+text-shadow: 0 0 1px #333;
+}
+
+.cardBox:nth-child(1) .card .back {
+background: white;
+}
+
+.cardBox:nth-child(2) .card .back {
+background: white;
+}
+
+.cardBox:nth-child(3) .card .back {
+background: white;
+}
+
+.cardBox:nth-child(4) .card .back {
+background: white;
+}
+
+.cardBox:nth-child(2) .card {
+-webkit-animation: giro 1.5s 1;
+animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+-webkit-animation: giro 2s 1;
+animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+-webkit-animation: giro 2.5s 1;
+animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+from {
+transform: rotateY( 180deg);
+}
+to {
+transform: rotateY( 0deg);
+}
+}
+
+@keyframes giro {
+from {
+transform: rotateY( 180deg);
+}
+to {
+transform: rotateY( 0deg);
+}
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+  margin-left: 2.8%;
+  margin-top: 3%;
+  width: 46%;
+  }
+  .card {
+  height: 285px;
+  }
+  .cardBox:last-child {
+  margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+  width: 94.5%;
+  }
+  .card {
+  height: 260px;
+  }
+}
+
+div maincontainer {
+margin: 0 auto;
+width: ___px;
+text-align: center;
+}
+
+ul {
+margin: 0;
+padding: 0;
+}
+
+ul li {
+margin-left: auto;
+margin-right: auto;
+}
