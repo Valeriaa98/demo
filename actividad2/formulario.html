@@ -1,0 +1,85 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Formulario - JSG</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="j.js"></script>
+</head>
+
+<body>
+  <p class="copy">MINIMALISMO</p>
+  <h2>Formulario</h2>
+  <form action="#" method="get" name="formulario1">
+    <p>
+      <label for="txtNombre">Nombre</label>
+      <input id="txtNombre" type="text" name="txtNombre" placeholder="Ejem: Valeria" maxlength="20" size="20"/> 
+      <span id="txtNombreError" class="error0"></span>
+    </p>
+    <p>
+      <label for="txtApellidos">Apellidos</label>
+      <input id="txtApellidos" type="text" name="txtApellidos" placeholder="Ejem.: Arredondo" maxlength="30" size="25" />
+        <span id="txtApellidosError" class="error0"></span>
+    </p>
+    <p>
+      <label for="txtEmail">Email</label>
+      <input id="txtEmail" type="email" name="txtEmail" placeholder="" maxlength="30" size="25" />
+        <span id="txtEmailError" class="error0"></span>
+    </p>
+    <p>
+      <p>
+      <label for="numEdad">Edad</label>
+      <input id="numEdad" type="number" name="numEdad" placeholder="1 - 100" maxlength="3" size="3" />
+          <span id="numEdadError" class="error0"></span>
+    </p>
+      <p
+      <input id="<input type="date><input type="date"
+          <span id="<input type="date"</span>
+    </p>
+     
+      <label for="numTelefFijo">Teléfono</label>
+      <input id="numTelefMovil" type="number" maxlength="9" size="12" name="numTelefMovil" placeholder="Ejem.: 3053153104" />
+      
+      <span id="numTelefFijoError" class="error0"></span>
+    </p>
+    <p>
+      <label for="modCuenta">Genero</label><br/>
+      <input id="modCuenta0" type="radio" name="modCuenta" value="0" /> MASCULINO
+      <input id="modCuenta10" type="radio" name="modCuenta" value="10" /> FEMENINO
+        
+        <span id="modCuentaError" class="error0"></span>
+    </p>
+    <p>
+      <label for="plataformasSelec">Intereses</label><br/>
+      <input id="plataformasSelecpc" name="plataformasSelec" value="pc" type="checkbox" />Ropa minimalista 
+      <input id="plataformasSelecps4" name="plataformasSelec" value="ps4" type="checkbox" />Orden minimalista
+      <input id="plataformasSelecwiiu" name="plataformasSelec" value="wiiu" type="checkbox" />Vida minimalista
+      
+      <span id="plataformasSelecError" class="error0"></span>
+    </p>
+    <p>
+      <label for="contactoSelec">Contacto preferido</label>
+      <select name="contactoSelec">
+          <option value="email">Correo electrónico</option>
+          <optgroup label="Teléfono">
+            <option value="movil">Móvil</option>
+          </optgroup>
+          <option value="sms">SMS</option>
+          <option value="ninguna">Ninguna, gracias</option>
+        </select>
+        <span id="contactoSelecError" class="error0"></span>
+    </p>
+   
+    </p>
+    <p>
+        <center>
+            <input type="button" class="boton" id="botonenv" value="Enviar" onclick="enviarFormulario()"/>
+            <input type="reset" class="boton" id="botonreset" value="Borrar" onclick="location.reload();"/>
+        
+        </center>
+    </p>
+  </form>
+</body>
+
+</html>
+
